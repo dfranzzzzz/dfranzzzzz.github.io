@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./background.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  transition: all 0.07s;
+
+  label {
+    color: black;
+  }
+
+  p {
+    color: whitesmoke;
+    font-size: 10px;
+  }
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+
+}
+
