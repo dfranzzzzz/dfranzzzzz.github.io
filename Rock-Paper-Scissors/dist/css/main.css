@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.heroPic {
+  padding: 30px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 10px black solid;
+  border-radius: 20px;
+  margin: auto;
+  background: lightseagreen;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.container .btn {
+  border: 5px black solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.decisions {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 855px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #flex1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #flex2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .events {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media only screen and (max-width: 658px) {
+  .heroPic {
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+  }
+}

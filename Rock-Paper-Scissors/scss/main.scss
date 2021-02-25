@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.heroPic {
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content:space-between;
+  border: 10px black solid;
+  border-radius: 20px;
+  margin: auto;
+  background: lightseagreen;
+  max-width: fit-content;
+
+  .btn {
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+.decisions {
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 855px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #flex1 {
+    order: 1;
+  }
+
+  #flex2 {
+    order: 2;
+  }
+
+  .events {
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 658px) {
+  .heroPic {
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+  }
+}
