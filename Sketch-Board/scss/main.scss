@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  border: 0;
+  background: #9b9b9b;
+  text-align: center;
+  overflow: hidden;
+  font-family:monospace;
+}
+
+h1 {
+  color: red;
+  background: white;
+  border: 5px black dotted;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(16,auto);
+  height: 420px;
+  width: 420px;
+  border: 10px solid whitesmoke;
+}
+
+.gridSquares {
+  background-color: white;
+  border: 1px dotted grey;
+}
+
+.buttons {
+  margin: 25px auto 10px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 450px;
+
+  .btn {
+    font-family: monospace;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 105px;
+  }
+
+  #darken {
+    background: linear-gradient(to right, rgb(189, 189, 189), rgba(0, 0, 0, 0.6));
+    color: black;
+  }
+
+  #rgb {
+    background: linear-gradient(to right, red, yellow, turquoise, blue);
+  }
+}
+
+#bot {
+  margin: 10px auto;
+  justify-content: space-evenly;
+
+  #size,
+  #clear {
+    background: rgb(0, 150, 0);
+    color: white;
+  }
+}

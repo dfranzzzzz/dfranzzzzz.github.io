@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  border: 0;
+  background: #9b9b9b;
+  text-align: center;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+h1 {
+  color: red;
+  background: white;
+  border: 5px black dotted;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -ms-grid-columns: (auto)[16];
+      grid-template-columns: repeat(16, auto);
+  height: 420px;
+  width: 420px;
+  border: 10px solid whitesmoke;
+}
+
+.gridSquares {
+  background-color: white;
+  border: 1px dotted grey;
+}
+
+.buttons {
+  margin: 25px auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 450px;
+}
+
+.buttons .btn {
+  font-family: monospace;
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 105px;
+}
+
+.buttons #darken {
+  background: -webkit-gradient(linear, left top, right top, from(#bdbdbd), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to right, #bdbdbd, rgba(0, 0, 0, 0.6));
+  color: black;
+}
+
+.buttons #rgb {
+  background: -webkit-gradient(linear, left top, right top, from(red), color-stop(yellow), color-stop(turquoise), to(blue));
+  background: linear-gradient(to right, red, yellow, turquoise, blue);
+}
+
+#bot {
+  margin: 10px auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#bot #size,
+#bot #clear {
+  background: #009600;
+  color: white;
+}
